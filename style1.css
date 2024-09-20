@@ -95,8 +95,22 @@ body {
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
+  animation: flow 4s linear infinite;
 }
+@keyframes flow {
+  0% {
+    transform: translate(-8px);
+  }
 
+  50% {
+    transform: translate(8px);
+  }
+
+  100% {
+    transform: translate(-8px);
+  }
+
+}
 section{
   height: 100vh;
 
