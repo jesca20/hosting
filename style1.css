@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Gorditas&family=Poppins:wght@400;600&family=Preahvihear&family=Shadows+Into+Light&family=Style+Script&display=swap');
+@media (min-width: 901px){
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7dfd8;
+}
+
+.navbar {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-weight: bold;
+  margin: -5% 108px;
+    font-size: 18px;
+  letter-spacing: 1px;
+}
+.page1{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card {
+  display: flex;
+  margin-top: 10%;
+  background-color: #e7dfd8;
+  border: 1px solid #000000;
+  padding: 30px;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-content p1 {
+  color: rgb(58, 103, 107);
+}
+
+.text-content h1 {
+  font-size: 46px;
+  font-weight: 600;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #1d1d1d;
+}
+
+.text-content .handle {
+  color: gray;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 20%;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.image-content img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+section{
+  height: 100vh;
+
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.about-text {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+ 
+.about-text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-text img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.resumeinfo {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 20px;
+}
+.resumeinfo button::after {
+  content: '+  ';
+  margin-left: 65%;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 10px;
+}
+
+.resumeinfo button {
+  text-align: left;
+  background: transparent;
+  color: #000000;
+  border: 2px solid;
+  border-radius: 18px;
+  padding: 15px;
+  font-size: 1rem;
+  font-family: 'Gorditas', sans-serif;
+  cursor: pointer;
+  margin: 0 -90%;
+  transition: none;
+  width: 100%;
+}
+
+#edu-content,
+#work-content {
+  color: #000000;
+  overflow: hidden;
+  max-height: 0;
+  font-family: 'Poppins', sans-serif;
+  transition: max-height; /* Smooth transition */
+  margin-right: 20%;
+}
+
+#edu-content.open{
+    margin-left: -88%;
+    max-height: 80px;
+    overflow: visible;
+    text-align: left;
+}
+
+#work-content ul li{
+  list-style: none;
+}
+#work-content.open{
+  margin-left: 90%;
+  max-height: 80px;
+  overflow: visible;
+  text-align: left;
+  width: 100%;
+}
+
+.connect{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-card {
+  display: flex;
+ flex-direction: column;
+  margin-top: 10%;
+  background-color: #e7dfd8;
+  border: 1px solid #000000;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.connect-card h1{
+  margin-bottom: 30%;
+}
+
+.connect-card p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 30px 0 0 0;
+}
+
+.connect-card button{
+   width: 30%;
+   background: transparent;
+   margin-top: 3%;
+}
+
+.connect-card a {
+  display: inline-block;
+  margin-top: 2%;
+  text-align: center;
+  width: 40%;
+  background-color: #98ada0; /* WhatsApp color */
+  color: white;
+  border-radius: 12px;
+  padding: 5px 15px; /* Adjust padding as needed */
+  font-size: 1rem;
+  font-family: 'Gorditas', sans-serif;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.connect-card a:hover {
+  background-color: #acddbd; /* Darker shade on hover */
+}
+}
+
+@media (max-width: 600px) {
+  body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #e7dfd8; /* Same background color */
+      padding: 10px; /* Add some padding */
+  }
+
+  .navbar {
+      position: relative; /* Adjust position */
+      top: 10%; /* Adjust position */
+      left: 0;
+      transform: none; /* Remove translation */
+      align-items: center;
+      margin-top: 15%; /* Center items */
+  }
+
+  .navbar a {
+      text-decoration: none;
+      color: #1d1d1d; /* Same text color */
+      font-weight: bold;
+      margin: 0 40px; /* Adjust margin for stacked items */
+      font-size: 16px; /* Slightly smaller font size */
+  }
+
+  .page1 {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile-card {
+      display: flex;
+      height: 10%;
+      flex-direction: column; /* Stack content vertically */
+      margin-top: 20%;
+      background-color: #e7dfd8; /* Same background color */
+      border: 1px solid #000000; /* Same border */
+      padding: 20px; /* Reduce padding */
+      width: 100%; /* Full width */
+      box-shadow: none; /* Remove shadow for mobile */
+  }
+
+  .text-content {
+      padding-right: 0; /* Remove padding */
+      text-align: center; /* Center text */
+  }
+
+  .text-content p1 {
+      color: rgb(58, 103, 107); /* Maintain color */
+  }
+
+  .text-content h1 {
+      font-size: 28px; /* Smaller font size */
+      font-weight: 600;
+      color: #1d1d1d; /* Maintain text color */
+      margin-bottom: 10px;
+  }
+
+  .text-content p {
+      font-size: 16px; /* Slightly smaller font size */
+      margin-bottom: 15px;
+      color: #1d1d1d; /* Maintain text color */
+  }
+
+  .text-content .handle {
+      color: gray; /* Same handle color */
+      font-style: italic;
+      font-size: 14px; /* Smaller font size */
+      margin-bottom: 20px;
+  }
+
+  .social-icons {
+      display: flex;
+      gap: 10px; /* Reduce gap */
+      margin-top: 20%;
+      justify-content: space-evenly;
+  }
+
+  .social-icons a {
+      text-decoration: none;
+      color: black; /* Same color for icons */
+      font-size: 1.2rem; /* Smaller icon size */
+  }
+
+  .image-content img {
+      display: none;
+  }
+
+  section {
+      height: auto; /* Adjust height */
+      padding: 20px; /* Add padding */
+  }
+
+  .about-me-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      padding: 20px; /* Reduce padding */
+      max-width: 100%;
+      margin-top: 20%; /* Full width */
+  }
+
+  .about-text {
+      background-color: #f5f5f5; /* Maintain background */
+      padding: 20px; /* Reduce padding */
+      border-radius: 10px;
+      margin-bottom: 30px;
+      text-align: left;
+  }
+
+  .about-text h1 {
+      font-size: 28px; /* Smaller font size */
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1d1d1d; /* Maintain text color */
+      letter-spacing: 1px; /* Adjust letter spacing */
+      text-align: center;
+  }
+
+  .about-text p {
+      font-size: 16px; /* Smaller font size */
+      color: #333; /* Maintain text color */
+      margin-bottom: 15px;
+      line-height: 1.4; /* Adjust line height */
+  }
+
+  .about-text img {
+      width: 100%; /* Full width */
+      height: auto;
+      object-fit: cover;
+      border-radius: 0 0 10px 10px;
+  }
+
+  .resumeinfo {
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin: 10px 0; /* Adjust margin */
+  }
+
+  .resumeinfo button::after {
+      content: '+  ';
+      margin-left: 65%;
+  }
+
+  .button-container {
+      display: flex;
+      flex-direction: column; /* Stack buttons */
+      margin-bottom: 10px;
+  }
+
+  .resumeinfo button {
+      text-align: left;
+      background: transparent;
+      color: #000000; /* Maintain text color */
+      border: 2px solid;
+      border-radius: 18px;
+      padding: 10px; /* Reduce padding */
+      font-size: 0.9rem; /* Smaller font size */
+      font-family: 'Gorditas', sans-serif;
+      cursor: pointer;
+      width: 100%;
+      margin: 13px 0px 20px 0px;
+  }
+
+  #edu-content,
+  #work-content {
+      color: #000000; /* Maintain text color */
+      overflow: hidden;
+      max-height: 0;
+      font-family: 'Poppins', sans-serif;
+      transition: max-height; /* Smooth transition */
+  }
+
+  #edu-content.open {
+      max-height: 150px; /* Maintain max-height */
+      overflow: visible;
+      text-align: left;
+  }
+
+
+  #work-content.open {
+      max-height: 150px; /* Maintain max-height */
+      overflow: visible;
+      text-align: left;
+  }
+
+  .connect {
+      height: auto; /* Adjust height */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px; /* Add padding */
+  }
+
+  .connect-card {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      background-color: #e7dfd8; /* Same background color */
+      border: 1px solid #000000; /* Same border */
+      padding: 20px; /* Reduce padding */
+      box-shadow: none; /* Remove shadow for mobile */
+      width: 100%; /* Full width */
+  }
+
+  .connect-card h1 {
+      font-size: 24px; /* Smaller font size */
+      margin-bottom: 20%; /* Adjust margin */
+  }
+
+  .connect-card p {
+      font-size: 0.9rem; /* Smaller font size */
+      font-weight: bold;
+      margin: 20px 0 0 0; /* Adjust margin */
+  }
+
+  .connect-card button {
+      width: 80%; /* Wider button for mobile */
+      background: transparent;
+      margin-top: 3%;
+  }
+
+  .connect-card a {
+      display: inline-block;
+      margin-top: 2%;
+      text-align: center;
+      width: 80%; /* Wider link for mobile */
+      background-color: #98ada0; /* WhatsApp color */
+      color: white; /* Maintain text color */
+      border-radius: 12px;
+      padding: 5px 15px; /* Adjust padding as needed */
+      font-size: 1rem;
+      font-family: 'Gorditas', sans-serif;
+      text-decoration: none; /* Remove underline */
+      transition: background-color 0.3s ease; /* Smooth transition */
+  }
+
+  .connect-card a:hover {
+      background-color: #acddbd; /* Darker shade on hover */
+  }
+}
